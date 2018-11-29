@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Campus Information</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Kuncoro Nugraha</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="beranda">Beranda</string>
+    <string name="profile">Profile</string>
+    <string name="khs">KHS</string>
+    <string name="jadwal">Jadwal</string>
+    <string name="tugas">Tugas</string>
+    <string name="presensi">Presensi</string>
+    <string name="beasiswa">Beasiswa</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_beranda">Beranda</string>
+    <string name="profile_mahasiswa">Profil Mahasiswa</string>
+    <string name="button"/>
+    <string name="NIM">165410001</string>
+    <string name="Status_mahasiswa">Status : Aktif</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="text_profile_kmapus">TextView</string>
+    <string name="title_activity_khs">KHS</string>
+    <string name="title_activity_jadwal">Jadwal</string>
+    <string name="title_activity_tugas">Tugas</string>
+    <string name="title_activity_presensi">Presensi</string>
+    <string name="title_activity_beasiswa">Beasiswa</string>
+
+
+</resources>
