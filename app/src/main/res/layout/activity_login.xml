@@ -9,13 +9,13 @@
               android:paddingLeft="@dimen/activity_horizontal_margin"
               android:paddingRight="@dimen/activity_horizontal_margin"
               android:paddingTop="@dimen/activity_vertical_margin"
-              tools:context=".LoginActivity">
+              tools:context=".LoginActivity" android:background="@color/Background">
 
     <!-- Login progress -->
 
     <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="163dp" app:srcCompat="@drawable/wall" android:id="@+id/imageView2"
+            android:layout_width="365dp"
+            android:layout_height="258dp" app:srcCompat="@drawable/logo" android:id="@+id/imageView2"
             android:contentDescription="@string/todo" android:padding="10dp"/>
     <ScrollView
             android:id="@+id/login_form"
