@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 
 /**
@@ -38,11 +41,40 @@ public class PersonalFragment extends Fragment {
         }
     }
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.personal_fragment, container, false);
+        View fragV = inflater.inflate(R.layout.personal_fragment, container, false);
+        return fragV;
     }
-
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        ImageView btn1 = (ImageView) view.findViewById(R.id.imgbutton1);
+        ImageView btn2 = (ImageView) view.findViewById(R.id.imgbutton2);
+        ImageView btn3 = (ImageView) view.findViewById(R.id.imgbutton3);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Profile personal
+                Toast.makeText(getContext(),"Tidak tersedia untuk prototype", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Profile personal
+                Toast.makeText(getContext(),"Tidak tersedia untuk prototype", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Profile personal
+                Toast.makeText(getContext(),"Tidak tersedia untuk prototype", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }
