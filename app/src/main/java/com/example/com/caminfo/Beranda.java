@@ -46,7 +46,7 @@ public class Beranda extends AppCompatActivity implements NavigationView.OnNavig
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(PersonalFragment.newInstance("Personal"), "Personal");
         adapter.addFragment(AkademikFragment.newInstance("Akademik"), "Akademik");
-        adapter.addFragment(AkademikFragment.newInstance("Organisasi"), "Organisasi");
+        adapter.addFragment(OrganisasiFragment.newInstance("Organisasi"), "Organisasi");
         viewPager.setAdapter(adapter);
     }
     @Override

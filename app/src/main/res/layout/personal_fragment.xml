@@ -3,30 +3,33 @@
              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".PersonalFragment">
+             tools:context=".PersonalFragment" android:background="@color/Bacground_2">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:layout_margin="5dp"
-    >
+            android:background="@color/Bacground_2">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical"
                       android:layout_marginTop="?android:attr/windowTitleSize">
             <ImageView
                     android:src="@drawable/button_img1"
                     android:layout_width="match_parent"
+
                     android:layout_height="110dp" android:id="@+id/imgbutton1" android:layout_marginBottom="5dp"
                     android:longClickable="false" android:clickable="true"/>
             <ImageView
                     android:src="@drawable/button_img2"
                     android:layout_width="match_parent"
+
                     android:layout_height="110dp" android:id="@+id/imgbutton2" android:layout_marginBottom="5dp"
                     android:longClickable="false" android:clickable="true"/>
             <ImageView
                     android:src="@drawable/button_img3"
                     android:layout_width="match_parent"
+
                     android:id="@+id/imgbutton3" android:scaleType="fitXY" android:layout_height="110dp"
                     android:layout_marginBottom="5dp" android:longClickable="false" android:clickable="true"/>
         </LinearLayout>
