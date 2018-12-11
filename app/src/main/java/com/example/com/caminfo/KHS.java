@@ -15,7 +15,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class KHS extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener , AdapterView.OnItemSelectedListener{
@@ -52,6 +55,18 @@ public class KHS extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         //getMenuInflater().inflate(R.menu.kh, menu);
+        ImageView PP = findViewById(R.id.profileku_beranda);
+        PP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Profile personal
+                startActivity(new Intent(getApplicationContext(), ProfileP.class));
+            }
+        });
+        Glide.with(this)
+                .load(R.drawable.mhs)
+                .apply(RequestOptions.circleCropTransform())
+                .into(PP);
         return true;
     }
 
