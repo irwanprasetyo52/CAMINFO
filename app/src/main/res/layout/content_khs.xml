@@ -9,12 +9,4 @@
         tools:showIn="@layout/app_bar_khs"
         tools:context=".KHS">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/spinner"/>
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -36,12 +36,6 @@ public class KHS extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Spinner spin=(Spinner)findViewById(R.id.spinner);
-        spin.setOnItemClickListener((AdapterView.OnItemClickListener) this);
-        ArrayAdapter<String> aa = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, semester);
-        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spin.setAdapter(aa);
-
     }
 
     @Override
