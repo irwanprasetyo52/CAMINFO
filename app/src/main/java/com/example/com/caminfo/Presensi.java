@@ -13,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class Presensi extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -48,6 +51,18 @@ public class Presensi extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         //getMenuInflater().inflate(R.menu.presensi, menu);
+        ImageView PP = findViewById(R.id.profileku_beranda);
+        PP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Profile personal
+                startActivity(new Intent(getApplicationContext(), ProfileP.class));
+            }
+        });
+        Glide.with(this)
+                .load(R.drawable.mhs)
+                .apply(RequestOptions.circleCropTransform())
+                .into(PP);
         return true;
     }
 
