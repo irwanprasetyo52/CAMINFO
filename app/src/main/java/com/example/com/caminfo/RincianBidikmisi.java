@@ -11,5 +11,6 @@ public class RincianBidikmisi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rincian_bidikmisi);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //
     }
 }
