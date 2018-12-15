@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -35,6 +36,28 @@ public class Beasiswa extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        CardView btn1 = (CardView) findViewById(R.id.beasiswabidikmisi);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Profile personal
+                startActivity(new Intent(getApplicationContext(), RincianBidikmisi.class));
+            }
+        });
+        CardView btn2 = (CardView) findViewById(R.id.beasiswappa);
+        btn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), RincianBidikmisi.class));
+            }
+        });
+        CardView btn3 = (CardView) findViewById(R.id.beasiswadjarum);
+        btn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), RincianBidikmisi.class));
+            }
+        });
     }
 
     @Override
